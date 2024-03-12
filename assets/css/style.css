@@ -1,81 +1,93 @@
+/* Sets the basic font and size for the entire body of the document */
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-  }
-  
-  textarea.note {
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000;
-    border-left: 1px solid black;
-    padding: 10px;
-  }
-  
-  .note {
-    white-space: pre-wrap;
-  }
-  
-  .time-block {
-    border-radius: 15px;
-  }
-  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+/* Styles for textarea elements with the 'note' class */
+textarea.note {
+  background: transparent; /* No background color */
+  border: none; /* No border */
+  resize: none; /* Disables resizing */
+  color: #000000; /* Text color set to black */
+  border-left: 1px solid black; /* Solid black border on the left side */
+  padding: 10px; /* Padding around the text */
+}
+
+/* Ensures text within elements with 'note' class preserves whitespaces and line breaks */
+.note {
+  white-space: pre-wrap;
+}
+
+/* Styles for elements with 'time-block' class, specifically rounding the corners */
+.time-block {
+  border-radius: 15px;
+}
+
+/* Adds a solid white top border to elements with the 'row' class */
+.row {
+  border-top: 1px solid white;
+}
+
+/* Styling for elements with the 'hour' class */
+.hour {
+  background-color: #ffffff; /* Background color set to white */
+  color: #000000; /* Text color set to black */
+  border-top: 1px dashed #000000; /* Dashed black top border */
+}
+
+/* Styles for past time blocks */
+.isPast {
+  background-color: #d3d3d3; /* Light grey background */
+  color: white; /* White text color */
+}
+
+/* Styles for the current time block */
+.isPresent {
+  background-color: #ff6961; /* Red background color */
+  color: white; /* White text color */
+}
+
+/* Styles for future time blocks */
+.isFuture {
+  background-color: #77dd77; /* Light green background */
+  color: white; /* White text color */
+}
+
+/* Styling for the save button */
+.saveButton {
+  border-left: 1px solid black; /* Solid black left border */
+  border-top-right-radius: 15px; /* Rounded top right corner */
+  border-bottom-right-radius: 15px; /* Rounded bottom right corner */
+  background-color: #06aed5; /* Blue background color */
+  color: white; /* White text color */
+}
+
+/* Hover effect for icons within the saveButton */
+.saveButton i:hover {
+  font-size: 20px; /* Increases font size */
+  transition: all 0.3s ease-in-out; /* Smooth transition for the effect */
+}
+
+/* Responsive design adjustments for smaller screens */
+@media screen and (max-width: 768px), screen and (max-width: 575px) {
   .row {
-    border-top: 1px solid white;
+      height: auto; /* Auto-adjusts height */
+      margin-top: 20px; /* Adds margin on the top */
   }
-  
+
   .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
+      padding-right: 17%; /* Adjusts padding to the right */
   }
-  
-  .isPast {
-    background-color: #d3d3d3;
-    color: white;
-  }
-  
-  .isPresent {
-    background-color: #ff6961;
-    color: white;
-  }
-  
-  .isFuture {
-    background-color: #77dd77;
-    color: white;
-  }
-  
+
   .saveButton {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #06aed5;
-    color: white;
+      border: 0; /* Removes border */
+      border-radius: 0.25rem; /* Adjusts border radius */
+      height: 50px; /* Sets height */
   }
-  
-  .saveButtom i:hover {
-    font-size: 20px;
-    transition: all 0.3s ease-in-out;
+
+  textarea.note {
+      min-height: 85px; /* Sets minimum height */
+      border: 0; /* Removes border */
   }
-  @media screen and (max-width: 768px), screen and (max-width: 575px) {
-    .row {
-      height: auto;
-      margin-top: 20px;
-    }
-  
-    .hour {
-      padding-right: 17%;
-    }
-  
-    .saveButton {
-      border: 0;
-      border-radius: 0.25rem;
-      height: 50px;
-    }
-  
-    textarea.note {
-      min-height: 85px;
-      border: 0;
-    }
-  }
-  
+}
