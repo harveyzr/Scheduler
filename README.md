@@ -45,16 +45,16 @@ The main goal of this application is to use the skills we learned in class to cr
 ![Website Preview](assets/img/05-third-party-apis-homework-demo.gif)
  
  ## Link to Deployed Webpage
-https://harveyzr.github.io/quizchallenge/
+https://harveyzr.github.io/Scheduler/
  
 ## Link to GetHub Website
-https://github.com/harveyzr/quizchallenge
+https://github.com/harveyzr/Scheduler
 
 
  ## Skills Used
 - JavaScript
 - Bootstrap
 - Jquery
-- Bootstrap
+
 
 
