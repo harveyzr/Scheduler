@@ -1,4 +1,4 @@
-# Quiz Challenge
+# Scheduler
 
 ## Table of Contents
 
